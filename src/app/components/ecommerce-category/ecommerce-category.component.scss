@@ -8,13 +8,19 @@
     padding: 1rem 1rem 1rem 0.4rem;
 }
 
-.flex-container {
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.slide-container {
     display: -webkit-box;
     flex-wrap: inherit;
     overflow-x: scroll;
 }
 
-.flex-container>div {
+.slide-container>.item {
     width: 28%;
     margin: 0.4rem;
     text-align: center;

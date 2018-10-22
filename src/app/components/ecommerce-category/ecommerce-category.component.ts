@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-ecommerce-category',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ecommerce-category.component.scss']
 })
 export class EcommerceCategoryComponent implements OnInit {
+  @Input() title = '';
+  @Input() itemPerLine = 5;
+  @Input() items: Array<any> = [];
+  @Output() itemSelected = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  selectItem(item) {
+    this.itemSelected.emit(item);
   }
 
 }
