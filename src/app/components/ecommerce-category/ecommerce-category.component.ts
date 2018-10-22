@@ -7,7 +7,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class EcommerceCategoryComponent implements OnInit {
   @Input() title = 'title';
-  @Input() itemPerLine = 5;
   @Input() items: Array<any> = [];
   @Output() itemSelected = new EventEmitter();
 
