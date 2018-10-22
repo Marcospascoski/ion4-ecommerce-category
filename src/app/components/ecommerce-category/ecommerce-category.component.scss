@@ -1,0 +1,22 @@
+.box {
+    background-color: #ffffff;
+}
+
+.title {
+    color: #9a9a9a;
+    font-size: 1.2rem;
+    padding: 1rem 1rem 1rem 0.4rem;
+}
+
+.flex-container {
+    display: -webkit-box;
+    flex-wrap: inherit;
+    overflow-x: scroll;
+}
+
+.flex-container>div {
+    width: 28%;
+    margin: 0.4rem;
+    text-align: center;
+    height: 8rem;
+}
