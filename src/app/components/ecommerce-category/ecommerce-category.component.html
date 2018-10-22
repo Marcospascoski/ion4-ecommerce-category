@@ -3,13 +3,24 @@
     {{title}}
   </div>
   <div class="slide-container">
-    <div class="item" *ngFor="let item of items;let i = index" (click)="selectItem(item)">
-      <div>
-        <img [src]="item.image.url" alt="imag">
-        <div class="name">
-          {{item.name}}
-        </div>
-      </div>
-    </div>
+    <ion-grid>
+      <ion-row class="horizontal">
+        <ion-col size="3" class="center" *ngFor="let item of items1;let i = index" (click)="selectItem(item)">
+          <img [src]="item.image.url" alt="imag" width="101px" height="89px">
+          <div class="name">
+            {{item.name}}
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="horizontal">
+        <ion-col size="3" class="center" *ngFor="let item of items2;let i = index" (click)="selectItem(item)">
+          <img [src]="item.image.url" alt="imag" width="101px" height="89px">
+          <div class="name">
+            {{item.name}}
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </div>

@@ -66,6 +66,13 @@
                     "image": {
                         "url": "https://cf.shopee.co.th/file/033077b1335cbebc616ab82432837844_tn"
                     }
+                },
+                {
+                    "_id": "cate100",
+                    "name": "อื่นๆ",
+                    "image": {
+                        "url": "https://cf.shopee.co.th/file/80bb2c205344a459072b199332e7d8f4_tn"
+                    }
                 }
             ]
         }

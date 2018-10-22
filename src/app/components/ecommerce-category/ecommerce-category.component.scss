@@ -16,20 +16,17 @@
 
 .slide-container {
     display: -webkit-box;
-    overflow-x: scroll; // height: 16rem;
+    overflow-x: scroll;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-.slide-container>.item {
-    width: 28%;
-    margin: 0.4rem;
+.center {
     text-align: center;
-    height: 8rem;
 }
 
-.collapse-col {
-    visibility: collapse !important;
+.horizontal {
+    flex-wrap: nowrap !important;
 }
