@@ -3,7 +3,7 @@
     {{title}}
   </div>
   <div class="slide-container">
-    <div class="item" *ngFor="let item of items" (click)="selectItem(item)">
+    <div class="item" *ngFor="let item of items;let i = index" (click)="selectItem(item)">
       <div>
         <img [src]="item.image.url" alt="imag">
         <div class="name">

@@ -7,5 +7,5 @@
 </ion-header>
 
 <ion-content>
-  <app-ecommerce-category [title]="data.data.category.title" [items]="data.data.category.items" (itemSelected)="itemSelected($event)"></app-ecommerce-category>
+  <app-ecommerce-category [title]="data.data.category.title" [items]="data.data.category.items" [itemPerLine]="5" (itemSelected)="itemSelected($event)"></app-ecommerce-category>
 </ion-content>

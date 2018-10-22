@@ -17,7 +17,11 @@
 .slide-container {
     display: -webkit-box;
     flex-wrap: inherit;
-    overflow-x: scroll;
+    overflow-x: scroll; // height: 16rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .slide-container>.item {
@@ -25,4 +29,8 @@
     margin: 0.4rem;
     text-align: center;
     height: 8rem;
+}
+
+.collapse-col {
+    visibility: collapse !important;
 }
