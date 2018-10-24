@@ -5,7 +5,7 @@
   <div class="slide-container">
     <ion-grid>
       <ion-row class="horizontal">
-        <ion-col size="3" class="center" *ngFor="let item of items1;let i = index" (click)="selectItem(item)">
+        <ion-col size="3" class="center" *ngFor="let item of items1" (click)="selectItem(item)">
           <img [src]="item.image.url" alt="imag" width="101px" height="89px">
           <div class="name">
             {{item.name}}
@@ -14,7 +14,7 @@
       </ion-row>
 
       <ion-row class="horizontal">
-        <ion-col size="3" class="center" *ngFor="let item of items2;let i = index" (click)="selectItem(item)">
+        <ion-col size="3" class="center" *ngFor="let item of items2" (click)="selectItem(item)">
           <img [src]="item.image.url" alt="imag" width="101px" height="89px">
           <div class="name">
             {{item.name}}
